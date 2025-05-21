@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>United Aseel Construction Ltd.</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <!-- Splash Screen -->
+    <div id="splash-screen">
+        <h1>United Aseel Construction Ltd.</h1>
+    </div>
+
+    <!-- Main Content -->
+    <div id="main-content" class="hidden">
+        <header>
+            <div class="logo">United Aseel Construction Ltd.</div>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Vision</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">About Us</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="content">
+            <h2>Welcome to United Aseel Construction Ltd.</h2>
+            <p>Your trusted partner in construction excellence.</p>
+        </section>
+    </div>
+
+    <script>
+        // Show splash screen for 3 seconds
+        window.addEventListener("load", () => {
+            setTimeout(() => {
+                document.getElementById("splash-screen").style.display = "none";
+                document.getElementById("main-content").classList.remove("hidden");
+            }, 3000);
+        });
+    </script>
+</body>
+
+</html>
